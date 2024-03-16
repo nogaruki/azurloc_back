@@ -60,7 +60,7 @@ app.use('/refresh', require('./routes/refresh'));
 app.use(prefix +'/user', require('./routes/api/users'));
 app.use(prefix +'/activities', require('./routes/api/activity'));
 app.use(prefix +'/categories', require('./routes/api/category'));
-app.user('/ping', (req, res) => {
+app.use('/ping', (req, res) => {
     res.status(200).json({ message: 'pong' });
 });
 
